@@ -1,6 +1,6 @@
 package test;
 
-import cn.limbo.design_pattern.Adapter;
+import cn.limbo.design_pattern.ObjectAdapter;
 import cn.limbo.design_pattern.ChineseCharger;
 import cn.limbo.design_pattern.ChineseStandard;
 import org.junit.Test;
@@ -14,7 +14,7 @@ public class AdapterTest {
     public void show(){
 
         ChineseStandard chineseStandard = new ChineseCharger();
-        Adapter adapter = new Adapter(chineseStandard);
+        ObjectAdapter adapter = new ObjectAdapter(chineseStandard);
         adapter.chargeByAmericanCharger();
 
     }
