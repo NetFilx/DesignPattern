@@ -1,8 +1,8 @@
-package test;
+package cn.limbo.test;
 
-import cn.limbo.design_pattern.ObjectAdapter;
-import cn.limbo.design_pattern.ChineseCharger;
-import cn.limbo.design_pattern.ChineseStandard;
+import cn.limbo.design_patterns.adapter.object_adapter.ObjectAdapter;
+import cn.limbo.design_patterns.adapter.ChineseCharger;
+import cn.limbo.design_patterns.adapter.ChineseStandard;
 import org.junit.Test;
 
 /**

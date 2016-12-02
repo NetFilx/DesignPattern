@@ -1,15 +1,15 @@
-package cn.limbo.facade;
+package cn.limbo.design_patterns.facade;
 
 /**
  * 移位加密法
  * Created by limbo on 2016/12/1.
  */
-public class ShiftEncryption implements CipherMachine {
+public class ShiftCipherMachine implements CipherMachine {
 
     //偏移量
     private int shift;
 
-    public ShiftEncryption(int shift) {
+    public ShiftCipherMachine(int shift) {
         this.shift = shift;
     }
 
@@ -41,7 +41,7 @@ public class ShiftEncryption implements CipherMachine {
                 if (temp < 65)
                     temp += 26;
             }
-            result += (char)temp;
+            result += (char) temp;
         }
         System.out.println("得到密文: " + result);
         return result;

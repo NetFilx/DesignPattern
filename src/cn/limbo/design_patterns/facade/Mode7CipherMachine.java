@@ -1,11 +1,12 @@
-package cn.limbo.facade;
+package cn.limbo.design_patterns.facade;
 
 /**
+ * 模7加密法
  * Created by limbo on 2016/12/1.
  */
 public class Mode7CipherMachine implements CipherMachine {
     @Override
-    public String  doEncrypt(String plainText) {
+    public String doEncrypt(String plainText) {
         String result = "";
 
         char[] chars = plainText.toCharArray();

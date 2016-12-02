@@ -1,4 +1,4 @@
-package cn.limbo.design_pattern;
+package cn.limbo.design_patterns.adapter.abstract_adapter;
 
 /**
  * 个人感觉的类适配器的第三种实现方式，抽象类的实现方式
@@ -6,7 +6,7 @@ package cn.limbo.design_pattern;
  * 用到这个类的时候只要有选择的实现就好了，用不到的方法就放着
  * Created by limbo on 2016/11/30.
  */
-public abstract class AbstractAdapter{
+public abstract class AbstractAdapter {
 
 
     public void methodA() {

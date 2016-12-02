@@ -1,4 +1,4 @@
-package cn.limbo.facade;
+package cn.limbo.design_patterns.facade;
 
 /**
  * 外观类，说明如下：
@@ -14,10 +14,10 @@ public class Facade {
         this.cipherMachine = cipherMachine;
     }
 
-    public void doEncrypt(String inputFilePath, String outputFilePath){
+    public void doEncrypt(String inputFilePath, String outputFilePath) {
         String plainText = FileInput.read(inputFilePath);
         String cipher = cipherMachine.doEncrypt(plainText);
-        FileOutput.write(cipher,outputFilePath);
+        FileOutput.write(cipher, outputFilePath);
     }
 
 }

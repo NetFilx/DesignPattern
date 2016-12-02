@@ -1,4 +1,7 @@
-package cn.limbo.design_pattern;
+package cn.limbo.design_patterns.adapter.object_adapter;
+
+import cn.limbo.design_patterns.adapter.AmericanStandard;
+import cn.limbo.design_patterns.adapter.ChineseStandard;
 
 /**
  * 电源适配器，即为中国的充电器提供一个可以在美国那里可以正常工作的环境，因为本身就需要可以在美国
@@ -6,7 +9,7 @@ package cn.limbo.design_pattern;
  * 实现方式 对象适配器
  * Created by limbo on 2016/11/30.
  */
-public class ObjectAdapter implements AmericanStandard{
+public class ObjectAdapter implements AmericanStandard {
 
     //采用组合方式，将符合中国标准的充电器组合经来(即ChineseStandard的子类)，如果不能理解的话可以看看电源适配器的原理和样子
     private ChineseStandard chineseStandard;

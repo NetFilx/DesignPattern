@@ -1,7 +1,7 @@
-package cn.limbo.facade;
+package cn.limbo.design_patterns.facade;
 
 /**
- * 加密类的接口
+ * 加密的标准
  * Created by limbo on 2016/12/1.
  */
 public interface CipherMachine {

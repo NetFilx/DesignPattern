@@ -1,41 +1,45 @@
-package cn.limbo.facade;
+package cn.limbo.design_patterns.facade;
 
+import java.io.BufferedReader;
 import java.io.File;
-import java.io.FileWriter;
+import java.io.FileReader;
 import java.io.IOException;
 
 /**
- * 将密码写入到文件中
+ * 实现从文件中读取明文
  * 单一职责原则
  * Created by limbo on 2016/12/1.
  */
-public class FileOutput {
+public class FileInput {
 
     /**
-     * 将密文写入到文件中
-     * @param cipher 密文
-     * @param filePath 密文存储路径
+     * 从文件中读入
+     *
+     * @param filePath 文件全路径
+     * @return 文件内容
      */
-    public static void write(String cipher, String filePath){
-
+    public static String read(String filePath) {
         File file = null;
-        FileWriter writer = null;
+        BufferedReader reader = null;
+        StringBuilder sb = new StringBuilder();
+        String line = null;
         try {
             file = isExist(filePath);
-            writer = new FileWriter(file);
-            System.out.println("写入文件,保存密文");
-            writer.write(cipher);
-            writer.flush();
+            reader = new BufferedReader(new FileReader(file));
+            while ((line = reader.readLine()) != null) {
+                sb.append(line);
+            }
         } catch (IOException e) {
             e.printStackTrace();
-        }finally {
+        } finally {
             try {
-                writer.close();
+                reader.close();
             } catch (IOException e) {
                 e.printStackTrace();
             }
         }
-
+        System.out.println("读入明文: " + sb.toString());
+        return sb.toString();
     }
 
 
