@@ -1,6 +1,9 @@
 package cn.limbo.test;
 
+import cn.limbo.design_patterns.factory.factory_method.ElectricalApplication;
+import cn.limbo.design_patterns.factory.factory_method.Factory;
 import cn.limbo.design_patterns.factory.simple_factory.SimpleFactory;
+import cn.limbo.utils.XMLUtils;
 import org.junit.Test;
 
 /**
@@ -21,6 +24,11 @@ public class FactoryTest {
 
 	@Test
 	public void showFactoryMethod() {
+
+		Factory factory;
+		factory = (Factory) XMLUtils.getBean("FactoryName");
+		ElectricalApplication TV = factory.getElectricalApplication();
+		TV.create();
 
 	}
 
