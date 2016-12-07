@@ -1,5 +1,7 @@
 package cn.limbo.test;
 
+import cn.limbo.design_patterns.factory.abstract_factory.AbstractFactory;
+import cn.limbo.design_patterns.factory.abstract_factory.HairFactory;
 import cn.limbo.design_patterns.factory.factory_method.ElectricalApplication;
 import cn.limbo.design_patterns.factory.factory_method.Factory;
 import cn.limbo.design_patterns.factory.simple_factory.SimpleFactory;
@@ -34,7 +36,10 @@ public class FactoryTest {
 
 	@Test
 	public void showAbstractFactory() {
-
+		AbstractFactory factory = new HairFactory();
+		factory.createFridge().create();
+		factory.createTV().create();
+		factory.createWashingMachine().create();
 	}
 
 }
