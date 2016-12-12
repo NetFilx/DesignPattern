@@ -8,6 +8,7 @@ import cn.limbo.design_patterns.responsibility_chain.concrete_approver.Manager;
 import org.junit.Test;
 
 /**
+ * 请假类
  * Created by limbo on 2016/12/11.
  */
 public class ResponsibilityTest {
