@@ -1,6 +1,6 @@
-package cn.limbo.design_patterns.observer.concrete_observer;
+package cn.limbo.design_patterns.observer.one_way_linkage.concrete_observer;
 
-import cn.limbo.design_patterns.observer.Observer;
+import cn.limbo.design_patterns.observer.one_way_linkage.Observer;
 
 /**
  * Created by limbo on 2016/12/13.

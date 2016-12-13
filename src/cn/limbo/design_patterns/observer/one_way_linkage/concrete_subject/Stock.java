@@ -1,7 +1,7 @@
-package cn.limbo.design_patterns.observer.concrete_subject;
+package cn.limbo.design_patterns.observer.one_way_linkage.concrete_subject;
 
-import cn.limbo.design_patterns.observer.Observer;
-import cn.limbo.design_patterns.observer.Subject;
+import cn.limbo.design_patterns.observer.one_way_linkage.Observer;
+import cn.limbo.design_patterns.observer.one_way_linkage.Subject;
 
 /**
  * 具体目标类：股票类，实现了抽象目标类

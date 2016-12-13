@@ -1,4 +1,4 @@
-package cn.limbo.design_patterns.observer;
+package cn.limbo.design_patterns.observer.one_way_linkage;
 
 import java.util.ArrayList;
 
@@ -27,6 +27,7 @@ public abstract class Subject {
 		observers.remove(observer);
 	}
 
+	//通知观察者
 	public abstract void notifyObservers(String state);
 
 }

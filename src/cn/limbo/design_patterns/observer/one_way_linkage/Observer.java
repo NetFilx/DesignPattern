@@ -1,4 +1,4 @@
-package cn.limbo.design_patterns.observer;
+package cn.limbo.design_patterns.observer.one_way_linkage;
 
 /**
  * Created by limbo on 2016/12/13.
