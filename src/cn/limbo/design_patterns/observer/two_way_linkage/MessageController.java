@@ -3,6 +3,8 @@ package cn.limbo.design_patterns.observer.two_way_linkage;
 import java.util.ArrayList;
 
 /**
+ * 消息控制中心，用于接受消息和发送消息
+ * 既是观察者也是观察目标
  * Created by limbo on 2016/12/13.
  */
 public class MessageController extends Subject implements Observer {

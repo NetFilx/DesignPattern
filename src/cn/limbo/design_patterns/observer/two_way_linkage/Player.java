@@ -1,9 +1,12 @@
 package cn.limbo.design_patterns.observer.two_way_linkage;
 
 /**
+ * 玩家
+ * 可以发布求救信息也可以实施救援
+ * 既是观察者也是观察对象
  * Created by limbo on 2016/12/13.
  */
-public class Player extends Subject implements Observer {
+public class Player extends Subject implements Observer{
 
 	private MessageController mc;
 
@@ -25,7 +28,7 @@ public class Player extends Subject implements Observer {
 	//盟友受到攻击，作出回应
 	@Override
 	public void response(Message msg) {
-		System.out.println("收到" + msg.getPlayerNameBeingAttack() + "的求救消息");
+		System.out.println(this.name + "收到" + msg.getPlayerNameBeingAttack() + "的求救消息");
 		System.out.println(this.name + "马上前去支援");
 	}
 

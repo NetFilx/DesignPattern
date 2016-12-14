@@ -1,6 +1,7 @@
 package cn.limbo.design_patterns.observer.one_way_linkage;
 
 /**
+ * 抽象观察者类
  * Created by limbo on 2016/12/13.
  */
 public abstract class Observer {

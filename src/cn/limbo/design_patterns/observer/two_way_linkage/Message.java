@@ -1,7 +1,7 @@
 package cn.limbo.design_patterns.observer.two_way_linkage;
 
 /**
- * 消息类
+ * 求救消息类
  * Created by limbo on 2016/12/13.
  */
 public class Message {
