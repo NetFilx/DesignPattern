@@ -8,4 +8,5 @@ public interface Expression {
 
     public void execute();
     public void setText(String text);
+    public void interpret();
 }

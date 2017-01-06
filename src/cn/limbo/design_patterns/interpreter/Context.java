@@ -36,6 +36,7 @@ public class Context {
     public void execute(){
         for(String t : texts){
             expression.setText(t);
+            expression.interpret();
             expression.execute();
         }
     }

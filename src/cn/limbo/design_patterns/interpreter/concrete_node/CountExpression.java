@@ -29,9 +29,9 @@ public class CountExpression implements Expression {
     }
 
     //分割指令
-    private void split() {
+    @Override
+    public void interpret() {
         String[] words = this.text.split(token);
-
         for (int i = 0; i < words.length; i++) {
             //遇见空格则返回
             if (words[i].equals(" ")) {
@@ -52,7 +52,6 @@ public class CountExpression implements Expression {
 
     //解释执行语句
     public void execute() {
-        split();
         if (nodes.get(0) instanceof CountNode) {
             System.out.println("输入错误");
             return;

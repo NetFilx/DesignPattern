@@ -8,7 +8,7 @@ import cn.limbo.design_patterns.interpreter.abstract_node.OptionNode;
  * 计算节点
  * Created by dell on 2017/1/1.
  */
-public class CountNode implements OptionNode {
+public class CountNode implements Node {
 
     private String text; //操作符的内容
     private NumberNode left; //左边的数
@@ -26,6 +26,7 @@ public class CountNode implements OptionNode {
         this.right = right;
     }
 
+
     @Override
     public void interpret(Context context) {
 
@@ -35,7 +36,6 @@ public class CountNode implements OptionNode {
     public Object execute() {
 
         //如果右节点是计数节点，则递归执行
-
         if (text.equals("+")) {
             return left.getNum() + (Integer) right.execute();
         }
